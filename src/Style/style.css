@@ -2,6 +2,11 @@
     --background-tips: #292929;
     --background-box-main: #121212;
     --background-button: #fff;
+    --background-section-playlist: #242424;
+    --letter-color: #b3b3b3;
+    --letter-font-family: "DM Sans", sans-serif;
+    --letter-color-black: #000; 
+    --letter-color-white: #fff;
 }
 
 body {
@@ -12,7 +17,7 @@ body {
 
 /* SideBar */
 
-.sidebar, .library{
+.sidebar{
     position: fixed;
     top: 0;
     left: 0;
@@ -21,11 +26,7 @@ body {
     width: 300px;
 }
 
-.library {
-    padding-top: 180px;
-}
-
-.sidebar_navigation, .library_navigation {
+.sidebar_navigation{
     background-color: var(--background-box-main);
     border-radius: 8px;
     padding: 16px 0 0 16px;
@@ -43,77 +44,144 @@ body {
     width: 80px;
 }
 
-.sidebar nav ul, .library_navigation ul{
+.sidebar nav ul{
     margin-top: 20px;
     padding: 0 20px 10px 20px;
 }
 
-.library nav ul {
-    margin-top: 0;
-    padding-bottom: initial;
-}
-
-.sidebar ul li, .library ul li{
+.sidebar ul li{
     padding: 10px 0;
 }
 
-.sidebar nav ul li a, .library nav ul li a{
-    color: #b3b3b3;
+.sidebar nav ul li a{
+    color: var(--letter-color);
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--letter-font-family);
 }
 
-/* Nav Library */
-
-#fa-plus {
-    padding: 0 0 0 110px ;
-}
-
-.create-playlist, .explore-podcast {
-    border-radius: 10px;
-    background-color: var(--background-tips);
-    padding: 20px;
-    margin: 10px 0 0 0;
-}
-
-.create-playlist p, h1, .explore-podcast p, h1 {
-    padding: 10px 0 0 0;
-    color: #ffff;
-    font-weight: 600;
-    font-family: "DM Sans", sans-serif;
-}
-
-.create-playlist p , .explore-podcast p{
-    font-weight: 500;
-    font-size: small;
-}
-
-.create-playlist button , .explore-podcast button, .language{
-    padding: 5px 12px 5px 12px;
-    background-color: #ffff;
-    border-radius: 15px;
-    font-weight: 600;
-    font-family: "DM Sans", sans-serif;
-    font-size: small;
-    border: none;
-}
-
-.create-playlist div, .explore-podcast div {
-    padding: 14px 0 0 0;
-}
-
-.language {
+.library {
     background-color: var(--background-box-main);
-    color: #b3b3b3;
-    padding: 28px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4px 8px;
+    color: var(--letter-color);
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
-.language span {
-    border: 1px solid #fff;
-    padding: 10px;
+/* LIBRARY */
+
+.library .library__content {
+    display: flex;
+    justify-content: space-between;
+}
+.library .library__button {
+    display: flex;
+    background-color: transparent;
+    margin-right: 10px;
+    color: var(--letter-color);
+    border: 0;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--letter-font-family);
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+}
+.library .library__button .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 600;
+    padding-right: 8px;
+}
+
+.library .library__content .fa-plus {
+    margin: 20px 10px;
+}
+
+.section-playlist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: var(--background-section-playlist);
+    color: var(--letter-color);
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border-radius: 8px;
+}
+
+.section-playlist .section-playlist-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist-content .text {
+    padding-bottom: 14px;
+    color: var(--letter-color-white);
+    font-family: var(--letter-font-family);
+}
+
+.section-playlist-content .title {
+    font-weight: 700;
+}
+
+.section-playlist-content .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    
+}
+
+.section-playlist-content .section-playlist-button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-button);
+    color: var(--letter-color-black);
     border-radius: 20px;
-    font-weight: 800;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: var(--letter-font-family);
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    margin-top: 12px;
+    border: 0px;
+    width: 113px;
+}
+
+.sidebar .cookies {
+    margin: 25px 20px;
+}
+
+.sidebar .cookies a {
+    color: var(--letter-color);
+    font-weight: 500;
     font-size: 10px;
+    text-decoration: none;
+    text-transform: none
+}
+
+.sidebar .cookies a:hover {
+    text-decoration: underline;
+}
+
+.language .language-button {
+    background-color: transparent;
+    border: 1px solid #878787;
+    border-radius: 20px;
+    color: var(--letter-color-white);
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
 }
