@@ -1,3 +1,9 @@
+:root {
+    --background-tips: #292929;
+    --background-box-main: #121212;
+    --background-button: #fff;
+}
+
 body {
     background-color: #000;
 }
@@ -20,14 +26,14 @@ body {
 }
 
 .sidebar_navigation, .library_navigation {
-    background-color: #121212;
+    background-color: var(--background-box-main);
     border-radius: 8px;
     padding: 16px 0 0 16px;
 }
 
 
 .sidebar_navigation .logo {
-    background-color: #121212;
+    background-color: var(--background-box-main);
     display: flex;
     border-radius: 8px;
     padding: 16px 0 0 16px;
@@ -67,7 +73,7 @@ body {
 
 .create-playlist, .explore-podcast {
     border-radius: 10px;
-    background-color: #292929;
+    background-color: var(--background-tips);
     padding: 20px;
     margin: 10px 0 0 0;
 }
@@ -99,7 +105,7 @@ body {
 }
 
 .language {
-    background-color: #121212;
+    background-color: var(--background-box-main);
     color: #b3b3b3;
     padding: 28px;
 }
