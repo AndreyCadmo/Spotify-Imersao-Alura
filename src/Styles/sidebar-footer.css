@@ -68,6 +68,7 @@ body {
 .library .library__content {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 .library .library__button {
     display: flex;
@@ -141,6 +142,7 @@ body {
     margin-top: 12px;
     border: 0px;
     width: 113px;
+    cursor: pointer;
 }
 
 .sidebar .cookies {

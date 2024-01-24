@@ -1,10 +1,18 @@
 :root {
+
+    /*FONTE*/
+    --letter-font-family: "DM Sans", sans-serif;
+
+    /* COR BACKGROUND*/
     --background-tips: #292929;
     --background-box-main: #121212;
     --background-button: #fff;
     --background-section-playlist: #242424;
+    --background-icon: #131313;
+    --background-icon-opacity: rgba(0,0,07);
+
+    /* COR FONTE*/
     --letter-color: #b3b3b3;
-    --letter-font-family: "DM Sans", sans-serif;
     --letter-color-black: #000; 
     --letter-color-white: #fff;
 }
