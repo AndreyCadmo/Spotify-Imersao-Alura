@@ -1,16 +1,6 @@
-:root {
-    --background-tips: #292929;
-    --background-box-main: #121212;
-    --background-button: #fff;
-    --background-section-playlist: #242424;
-    --letter-color: #b3b3b3;
-    --letter-font-family: "DM Sans", sans-serif;
-    --letter-color-black: #000; 
-    --letter-color-white: #fff;
-}
-
 body {
     background-color: #000;
+    font-family: var(--letter-font-family);
 }
 
 /* Cima Direita Baixo Esquerda */
@@ -58,7 +48,6 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    font-family: var(--letter-font-family);
 }
 
 .library {
@@ -88,7 +77,6 @@ body {
     border: 0;
     font-size: 14px;
     font-weight: 700;
-    font-family: var(--letter-font-family);
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -127,7 +115,6 @@ body {
 .section-playlist-content .text {
     padding-bottom: 14px;
     color: var(--letter-color-white);
-    font-family: var(--letter-font-family);
 }
 
 .section-playlist-content .title {
@@ -148,7 +135,6 @@ body {
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: var(--letter-font-family);
     text-decoration: none;
     text-transform: none;
     padding: 10px;
