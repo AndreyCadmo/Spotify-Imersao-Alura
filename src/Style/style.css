@@ -105,7 +105,7 @@ body {
     margin: 20px 10px;
 }
 
-.section-playlist {
+.section-playlist { 
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -184,4 +184,38 @@ body {
     width: 170px;
     margin: 8px;
     padding: 8px;
+}
+
+.paid_promotion{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #AF2997, #519AF4);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--letter-color-white);
+}
+
+.paid_promotion .text .title {
+    font-weight: 600;
+    font-size: medium;
+}
+
+.paid_promotion .text .subtitle {
+    font-size: medium;
+
+}
+
+.paid_promotion button {
+    background-color: var(--background-button);
+    color: var(--letter-color-black);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
