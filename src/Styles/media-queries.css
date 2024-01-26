@@ -1,0 +1,17 @@
+@media screen and (max-width: 1015px){
+    .offer-list-item {
+        grid-template-columns: 1fr 1fr;
+    }
+    .playlist-container {
+        margin: 10px 20px 0 370px;
+    }
+}
+
+@media screen and (min-width: 2560px){
+    .playlist-container {
+        margin: 10px 160px 0 370px;
+    }
+    .offer-list-item {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
