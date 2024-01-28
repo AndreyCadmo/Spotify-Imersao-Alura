@@ -26,7 +26,7 @@ Acesse o <a href="https://spotify-imersao-alura-xi.vercel.app">Website</a> e vej
 - Grego - Só Deus
 - Humbe - Fantasmas
 - JVKE - Golden Hour
-- MC Caleinho - Carta Aberta
+- MC Cabelinho - Carta Aberta
 - MC Coringa - Já é de Manhã
 - MC Kevin - Terapia
 - MC Lorenzo - Não Fica Apaixonadinha
