@@ -7,7 +7,6 @@ const resultPlaylist = document.getElementById('result-playlists');
 async function requestApi(searchTerm) {
     const url = `https://vercel-restful-api.vercel.app/artists?name_like=${searchTerm}`;
     var htmlArtist = await readHtml("./src/parts/artist.html");
-    console.log(htmlArtist);
 
     resultArtist.innerHTML = '';
     fetch(url)
@@ -55,7 +54,6 @@ function displayArtistInfo(artist, partDoc) {
     playButton.addEventListener('click', function () {
 
         audioSource = audio.src.split("/").pop();
-        console.log(audioSource !== musicName, audioSource, musicName)
         if (audioSource !== musicName) {
             audio.pause();
             audio.src = musicPath;
@@ -82,7 +80,6 @@ function validMusicIsPlaying() {
     let audioSource = audio.src.split("/").pop();
     const currentPlay = document.getElementById(`play-btn-${audioSource}`);
     if (!!currentPlay) {
-        console.log(currentPlay);
         toggleClassBtnMusic(currentPlay.children[0]);
     }
 }
