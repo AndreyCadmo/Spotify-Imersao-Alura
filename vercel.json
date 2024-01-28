@@ -1,41 +1,26 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "api/**/*.js", "use": "@vercel/node" },
-      { "src": "public/**", "use": "@vercel/static" }
-    ],
-    "routes": [
-      {
-        "src": "/api/.*",
-        "dest": "/api/index.js"
-      },
-      {
-        "handle": "filesystem"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/$1",
-        "headers": { "Cache-Control": "public, max-age=3600" }
-      }
-    ],
-    "env": {
-      "API_URL": "/api"
+  "version": 2,
+  "builds": [
+    { "src": "api/**/*.js", "use": "@vercel/node" },
+    { "src": "public/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    {
+      "src": "/api/.*",
+      "dest": "/api/index.js"
     },
-    "functions": {
-      "api/index.js": {
-        "runtime": "@vercel/node"
-      }
-    },
-    "dev": {
-      "ignore": ["api/**/*.js"]
-    },
-    "build": {
-      "env": {
-        "DB_SERVER": "json-server --watch db.json --port 3001"
-      },
-      "commands": {
-        "build": "npm run build",
-        "serve": "json-server --watch db.json --port $PORT"
-      }
+    {
+      "src": "/(.*)",
+      "dest": "/$1",
+      "headers": { "Cache-Control": "public, max-age=3600" }
+    }
+  ],
+  "env": {
+    "API_URL": "/api"
+  },
+  "functions": {
+    "api/index.js": {
+      "runtime": "@vercel/node"
     }
   }
+}
