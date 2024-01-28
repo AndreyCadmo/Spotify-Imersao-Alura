@@ -90,15 +90,13 @@
             "genre": "Funk",
             "urlImg": "https://i.scdn.co/image/ab6761610000e5eb0c6a08aad6e864669b976c89",
             "urlMusic": "src/assets/music/mcLorenzo.mp3"
-            
         },
         {
             "id": 14,
             "name": "Tavin",
             "genre": "Trapper",
-            "urlImg": "https://i.scdn.co/image/ab6761610000e5ebe0e76512251275d515f6d2de",
+            "urlImg": "https://i.scdn.co/image/ab67616d00001e023cdf4a73dc6142ae36311416",
             "urlMusic": "src/assets/music/tavin.mp3"
-            
         },
         {
             "id": 15,
@@ -106,7 +104,6 @@
             "genre": "Rapper",
             "urlImg": "https://i.scdn.co/image/ab67616d00001e02ec2d9f3efa68b29c112e1cae",
             "urlMusic": "src/assets/music/nauta.mp3"
-            
         },
         {
             "id": 16,
@@ -114,7 +111,6 @@
             "genre": "Pop",
             "urlImg": "https://i.scdn.co/image/ab6761610000e5ebd8b9980db67272cb4d2c3daf",
             "urlMusic": "src/assets/music/billieElish.mp3"
-            
         },
         {
             "id": 17,
@@ -122,7 +118,62 @@
             "genre": "Pop",
             "urlImg": "https://i.scdn.co/image/ab67616d0000b273731953ff97a79644f6eb7b4e",
             "urlMusic": "src/assets/music/fujjiKaze.mp3"
-            
+        },
+        {
+            "id": 18,
+            "name": "Humbe",
+            "genre": "Pop",
+            "urlImg": "https://i.scdn.co/image/ab6761610000e5eb908fb085862bd719c26a8bbe",
+            "urlMusic": "src/assets/music/humbe.mp3"
+        },
+        {
+            "id": 19,
+            "name": "Organico",
+            "genre": "Hip Hop",
+            "urlImg": "https://i.scdn.co/image/ab67706c0000da842b1cafae7dc3ed8770d6e3af",
+            "urlMusic": "src/assets/music/organico.mp3"
+        },
+        {
+            "id": 20,
+            "name": "Pineapple",
+            "genre": "Hip Hop",
+            "urlImg": "https://i.scdn.co/image/ab6761610000e5ebe915b03e0d384550b452d024",
+            "urlMusic": "src/assets/music/pineapple.mp3"
+        },
+        {
+            "id": 21,
+            "name": "Chaoss",
+            "genre": "Hip Hop",
+            "urlImg": "https://i.scdn.co/image/ab67616d0000b2739106340c73529184d5ecab0f",
+            "urlMusic": "src/assets/music/chaoss.mp3"
+        },
+        {
+            "id": 22,
+            "name": "Ana Castela",
+            "genre": "Sertanejo",
+            "urlImg": "https://i.scdn.co/image/ab67706c0000da84e01118763e612eb375eca148",
+            "urlMusic": "src/assets/music/anaCastela.mp3"
+        },
+        {
+            "id": 23,
+            "name": "Bruno Gadiol",
+            "genre": "Pop",
+            "urlImg": "https://i.scdn.co/image/ab67616d00001e020314b3c70163b1e386e68993",
+            "urlMusic": "src/assets/music/brunoGadiol.mp3"
+        },
+        {
+            "id": 24,
+            "name": "JVKE",
+            "genre": "Pop",
+            "urlImg": "https://i.scdn.co/image/ab67616d0000b27378d1d5e3385b28c657e4fae9",
+            "urlMusic": "src/assets/music/jvke.mp3"
+        },
+        {
+            "id": 25,
+            "name": "SadStation",
+            "genre": "Blues",
+            "urlImg": "https://i.scdn.co/image/ab6761610000e5ebddb123c70e294aa9090baa27",
+            "urlMusic": "src/assets/music/sadStation.mp3"
         }
     ]
 }
