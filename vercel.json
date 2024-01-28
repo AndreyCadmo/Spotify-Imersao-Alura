@@ -23,4 +23,8 @@
       "runtime": "@vercel/node"
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b3370ed7986de82666106b1bef1fca9272c26683
