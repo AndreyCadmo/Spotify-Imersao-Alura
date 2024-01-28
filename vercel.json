@@ -22,14 +22,5 @@
     "api/index.js": {
       "runtime": "@vercel/node"
     }
-  },
-  "dev": {
-    "ignore": ["api/**/*.js"]
-  },
-  "builds": [
-    {
-      "src": "vercel-build.js",
-      "use": "@now/next"
-    }
-  ]
+  }
 }
