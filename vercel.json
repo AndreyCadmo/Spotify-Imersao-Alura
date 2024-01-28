@@ -23,13 +23,13 @@
       "runtime": "@vercel/node"
     }
   },
-  "build": {
-    "env": {
-      "DB_SERVER": "json-server --watch db.json --port 3001"
-    },
-    "commands": {
-      "build": "npm run build",
-      "serve": "json-server --watch db.json --port $PORT"
+  "dev": {
+    "ignore": ["api/**/*.js"]
+  },
+  "builds": [
+    {
+      "src": "vercel-build.js",
+      "use": "@now/next"
     }
-  }
+  ]
 }
