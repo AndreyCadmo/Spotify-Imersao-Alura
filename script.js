@@ -5,7 +5,7 @@ const resultArtist = document.getElementById("result-artist");
 const resultPlaylist = document.getElementById('result-playlists');
 
 async function requestApi(searchTerm) {
-    const url = `http://localhost:3000/artists?name_like=${searchTerm}`;
+    const url = `https://vercel-restful-api.vercel.app/artists?name_like=${searchTerm}`;
     var htmlArtist = await readHtml("./src/parts/artist.html");
     console.log(htmlArtist);
 
