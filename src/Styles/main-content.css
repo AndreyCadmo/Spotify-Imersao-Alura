@@ -96,7 +96,7 @@
 /* PLAYLIST */
 
 .playlist-container {
-    height: 68vh;
+    min-height: 68vh;
     padding-top: 16px;
     padding-bottom: 10vh;
     margin: 10px 65px 0 370px;
@@ -107,7 +107,7 @@
     margin: 24px;
 }
 
-.playlist #greeting {
+.playlist .greeting {
     color: var(--letter-color-white);
     font-size: 32px;
     font-weight: 700;
@@ -219,3 +219,127 @@
     width: 107px;
     transform: rotate(25deg) translate(18%, -2%);
   }
+
+  /* CARD ARTISTA */
+
+.artist {
+  --column-count: 5;
+  --grid-gap: 24px;
+  --min-container-width: 372px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.artists-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.grid-container {
+  grid-gap:24px;
+  display: grid;
+  min-width: 155px;
+}
+
+.artist-card {
+  background: #181818;
+  border-radius: 8px;
+  -ms-flex: 1;
+  flex: 1;
+  isolation: isolate;
+  padding: 30px 10px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.artist-card:hover {
+  background-color: #252525;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.artist-img {
+  height: 150px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 62px;
+}
+
+.card-text a {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.artist-name {
+  box-sizing: border-box;
+  margin-block: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  padding-block-end: 8px;
+}
+
+.artist-categorie {
+  color: #6a6a6a;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.play {
+  position: relative;
+}
+
+.play .fa-play, .fa-pause {
+  position: absolute;
+  right: 10px;
+  top: 120px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  font-size: 14px;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .fa-play{
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.artist-card:hover .play .fa-pause{
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.play .fa-play:hover {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.play .fa-pause:hover {
+  padding: 20px;
+  cursor: pointer;
+}

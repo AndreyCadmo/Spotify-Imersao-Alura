@@ -99,7 +99,7 @@
                 </div>
                     <div class="header-search">
                         <img src="./src/assets/icons/search.png" alt="">
-                        <input id="serach-input" type="text" maxlength="800" placeholder="Vai ouvir oque agora?" />
+                        <input id="search-input" type="text" maxlength="800" autocomplete="off" placeholder="Vai ouvir oque agora?" />
                     </div>
                     <div class="header-login">
                         <button class="subscribe">Inscreva-se</button>
@@ -111,7 +111,7 @@
             <div class="playlist-container">
                 <div id="result-playlists">
                     <div class="playlist">
-                        <h1 id="greeting">Boa Tarde</h1>
+                        <h1 class="greeting" id="saudacao"></h1>
                         <h2 class="session">Navegar por todas as seções</h2>
                     </div>
 
@@ -243,6 +243,9 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="result-artist" class="artists-grid hidden"></div>
+
             </div>
         </div>
     </main>
@@ -261,48 +264,6 @@
             <button type="button">Inscreva-se grátis</button>
         </div>
     </footer>
-
-    <!-- DESAFIO AULA 1
-        <div class="library">
-        <nav class="library_navigation">
-             library name 
-            <div>
-                <ul>
-                    <li>
-                        <a href="">
-                            <span class="fas fa-book"> </span>
-                            <span>Sua Biblioteca</span>
-                            <span id="fa-plus" class="fa fa-plus"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <div class="create-playlist">
-                            <h1>Crie sua primeira playlist</h1>
-                            <p>É fácil, vamos te ajudar.</p>
-                            <div>
-                                <button>Criar playlist</button>
-                            </div>
-                        </div>
-
-                        <div class="explore-podcast">
-                            <h1>Que tal seguir um podcast novo?</h1>
-                            <p>Avisaremos você sobre novos episódios.</p>
-                            <div>
-                                <button>Explore podcasts</button>
-                            </div>
-                        </div>
-                        <div class="language">
-                            <span>
-                                <i class="fas fa-globe-americas"></i>
-                                Português do Brasil
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
-    </div> -->
-</body>
-
+    <script type="text/javascript" src="./script.js"></script>
+    </body>
 </html>
