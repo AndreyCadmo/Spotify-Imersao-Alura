@@ -48,6 +48,10 @@ function displayArtistInfo(artist, partDoc) {
     let musicName = musicPath.split("/").pop();
     playButton.id = `play-btn-${musicName}`;
 
+    audio.addEventListener('ended', function () {
+        playButton.innerHTML = '<span class="fa fa-solid fa-play"></span>';
+    });
+
     playButton.addEventListener('click', function () {
 
         audioSource = audio.src.split("/").pop();
