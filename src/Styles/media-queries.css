@@ -1,17 +1,82 @@
-@media screen and (max-width: 1015px){
+@media screen and (max-width: 660px){
     .offer-list-item {
         grid-template-columns: 1fr 1fr;
     }
+    .artists-grid { 
+        grid-template-columns: 1fr ;
+        padding: 15px 90px;
+    }
+}
+@media screen and (max-width: 900px){
+    .sidebar {
+        display: none;
+    }
+    .main-container {
+        margin-left: 2.5rem;
+    }
     .playlist-container {
-        margin: 10px 20px 0 370px;
+        margin-left: 3rem;
+    }
+    .offer-list-item {
+        grid-template-columns: 1fr 1fr  ;
+    }
+    .artists-grid { 
+        grid-template-columns: 1fr ;
+        padding: 15px 130px;
     }
 }
 
-@media screen and (min-width: 2560px){
-    .playlist-container {
-        margin: 10px 160px 0 370px;
+@media screen and (max-width: 1060px){
+    .header-login .login {
+        width: 65px;
+        font-size: 12px;
     }
+    .header-login .subscribe {
+        font-size: 12px;
+    }
+    .paid_promotion{
+        padding: 0.5rem 1rem;
+    }
+    .paid_promotion .text .title {
+        font-size: small;
+    }
+    .paid_promotion .text .subtitle {
+        font-size: small;
+    }
+    .paid_promotion button { 
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
     .offer-list-item {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    .artists-grid { 
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media screen and (min-width: 1318px){
+    .offer-list-item {
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    .offer-list-item {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    }
+}
+
+@media screen and (min-width: 2150px){
+    .offer-list-item {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    }
+}
+
+@media screen and (min-width: 2650px){
+    .offer-list-item {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }

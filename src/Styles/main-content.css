@@ -1,9 +1,9 @@
 /* HEADER */
 
 .main-container {
-    max-width: 80vw;
-    margin-left: 360px;
-    margin-right: 56px;
+  max-width: 800vh;
+  margin-left: 22.5rem;
+  margin-right: 3.5rem;
 }
 
 
@@ -237,7 +237,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   gap: 30px;
-  padding: 15px 30px;
+  padding: 15px 50px;
   flex-wrap: wrap;
 }
 
